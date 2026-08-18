@@ -20,13 +20,18 @@ SkyCore هو بلوقن مخصص لماينكرافت يضيف نظام **Weapon
 - Custom Head Textures
 - نظام Blacksmith كامل
 - دعم Vault Economy
-- GUI قابل للتعديل
+- GUI قابل للتعديل بالكامل
 - دعم Console Commands
 - مناسب للربط مع MythicMobs
 - Configurable Stats
+- Configurable Textures
 - Configurable Sounds
 - Configurable Messages
 - إمكانية إعطاء أكثر من Core بأمر واحد
+- كل Core يتم توليده بإحصائيات عشوائية مستقلة
+- Weapon Core يعمل فقط على الأسلحة المدعومة
+- Armor Core يعمل فقط على قطع الدروع
+- إمكانية استبدال الـCore الموجود من خلال Blacksmith
 
 ---
 
@@ -97,6 +102,7 @@ SkyCore يحتوي حاليًا على أربع درجات:
 - ترتفع قيم الإحصائيات
 - يزيد عدد الإحصائيات الممكنة
 - يصبح الـCore أقوى
+- تصبح فرصة الحصول على Core قوي أكثر قيمة
 
 ---
 
