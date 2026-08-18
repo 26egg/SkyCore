@@ -1,10 +1,5 @@
 # SkyCore
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![Paper](https://img.shields.io/badge/Paper-1.21%2B-brightgreen)
-![Java](https://img.shields.io/badge/Java-21-orange)
-![Vault](https://img.shields.io/badge/Vault-Supported-purple)
-
 SkyCore هو بلوقن مخصص لماينكرافت يضيف نظام **Weapon Cores** و **Armor Cores** بإحصائيات عشوائية، مع نظام **Blacksmith** لاستبدال الـCore الموجود على الأسلحة والدروع.
 
 تم تصميم البلوقن ليكون مناسبًا لسيرفرات **RPG** و**Skyblock** و**Survival** التي تعتمد على التقدم، الندرات، تطوير المعدات، الـBosses والـRewards.
