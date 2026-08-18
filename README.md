@@ -5,9 +5,9 @@
 ![Java](https://img.shields.io/badge/Java-21-orange)
 ![Vault](https://img.shields.io/badge/Vault-Supported-purple)
 
-SkyCore هو بلوقن مخصص لماينكرافت يضيف نظام **Weapon Cores** و **Armor Cores** بإحصائيات عشوائية، مع نظام Blacksmith لاستبدال الـCore الموجود على الأسلحة والدروع.
+SkyCore هو بلوقن مخصص لماينكرافت يضيف نظام **Weapon Cores** و **Armor Cores** بإحصائيات عشوائية، مع نظام **Blacksmith** لاستبدال الـCore الموجود على الأسلحة والدروع.
 
-تم تصميم البلوقن ليكون مناسبًا لسيرفرات الـRPG وSkyblock وSurvival التي تعتمد على التقدم، الندرات، تطوير المعدات، والـBoss Rewards.
+تم تصميم البلوقن ليكون مناسبًا لسيرفرات **RPG وSkyblock وSurvival** التي تعتمد على التقدم، الندرات، تطوير المعدات، الـBosses والـRewards.
 
 ---
 
@@ -15,34 +15,40 @@ SkyCore هو بلوقن مخصص لماينكرافت يضيف نظام **Weapon
 
 - Weapon Cores للأسلحة
 - Armor Cores للدروع
-- إحصائيات عشوائية حسب الندرة
-- أربع Rarities مختلفة
-- Custom Head Textures
+- إحصائيات عشوائية لكل Core
+- أربع درجات Rarity
+- Custom Player Head Textures
+- Weapon Attributes حقيقية
+- Critical Hit System
+- Life Steal
+- Defense
+- Fire Resistance
+- Poison Resistance
+- Max Health
 - نظام Blacksmith كامل
 - دعم Vault Economy
-- GUI قابل للتعديل بالكامل
+- GUI قابل للتعديل
+- Sounds قابلة للتعديل
+- Messages قابلة للتعديل
+- أسعار مختلفة حسب Rarity
 - دعم Console Commands
+- إعطاء أكثر من Core بأمر واحد
 - مناسب للربط مع MythicMobs
 - Configurable Stats
 - Configurable Textures
-- Configurable Sounds
-- Configurable Messages
-- إمكانية إعطاء أكثر من Core بأمر واحد
-- كل Core يتم توليده بإحصائيات عشوائية مستقلة
-- Weapon Core يعمل فقط على الأسلحة المدعومة
-- Armor Core يعمل فقط على قطع الدروع
-- إمكانية استبدال الـCore الموجود من خلال Blacksmith
 
 ---
 
 # Weapon Cores
 
-يمكن تركيب Weapon Core على:
+Weapon Core مخصص لتطوير الأسلحة.
+
+يمكن تركيبه على:
 
 - Swords
 - Axes
 
-كل Core يحصل على مجموعة من الإحصائيات حسب الـRarity الخاصة به.
+كل Weapon Core يحصل على مجموعة إحصائيات عشوائية حسب الـRarity الخاصة به.
 
 ## Weapon Stats
 
@@ -51,23 +57,27 @@ SkyCore هو بلوقن مخصص لماينكرافت يضيف نظام **Weapon
 | Attack Damage | زيادة الضرر الأساسي للسلاح |
 | Attack Speed | زيادة سرعة الهجوم |
 | Critical Rate | نسبة حدوث Critical Hit |
-| Critical Damage | زيادة ضرر الضربة الحرجة |
+| Critical Damage | زيادة قوة الضربة الحرجة |
 | Life Steal | استرجاع جزء من الصحة عند ضرب الخصم |
 
-### Weapon Core
+## Weapon Core داخل اللعبة
 
-<img src="assets/weapon-core.png" width="500">
+<img src="./assets/weapon-core.png" alt="Weapon Core" width="500">
 
 ---
 
 # Armor Cores
 
-يمكن تركيب Armor Core على:
+Armor Core مخصص لتطوير قطع الدروع.
+
+يمكن تركيبه على:
 
 - Helmet
 - Chestplate
 - Leggings
 - Boots
+
+كل Armor Core يحصل على Stats عشوائية حسب الـRarity الخاصة به.
 
 ## Armor Stats
 
@@ -78,11 +88,12 @@ SkyCore هو بلوقن مخصص لماينكرافت يضيف نظام **Weapon
 | Fire Resistance | تقليل ضرر النار واللافا |
 | Poison Resistance | تقليل ضرر السم |
 
+> **ملاحظة:**  
 > Fire Resistance وPoison Resistance لا يمكن أن يظهرا معًا داخل نفس Armor Core.
 
-### Armor Core
+## Armor Core داخل اللعبة
 
-<img src="assets/armor-core.png" width="500">
+<img src="./assets/armor-core.png" alt="Armor Core" width="500">
 
 ---
 
@@ -97,18 +108,18 @@ SkyCore يحتوي حاليًا على أربع درجات:
 | Legendary | قوي |
 | Special | الأعلى |
 
-كلما ارتفعت الندرة:
+كلما ارتفعت الـRarity:
 
-- ترتفع قيم الإحصائيات
+- ترتفع قوة الإحصائيات
 - يزيد عدد الإحصائيات الممكنة
-- يصبح الـCore أقوى
-- تصبح فرصة الحصول على Core قوي أكثر قيمة
+- يصبح الـCore أكثر قيمة
+- تزداد تكلفة استبداله في Blacksmith
 
 ---
 
 # Core Statistics
 
-عند تركيب Core على السلاح أو الدرع، يتم نقل الإحصائيات إلى القطعة نفسها.
+عند تركيب Core على سلاح أو درع، يتم نقل الإحصائيات إلى القطعة نفسها.
 
 مثال:
 
